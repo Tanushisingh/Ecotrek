@@ -1,0 +1,219 @@
+body {
+    font-family: 'Dancing Script', cursive; /* Use specific cursive font */
+    margin: 0;
+    padding: 0;
+    background: white;
+    font-size: x-large; /* Adjusted size */
+    color: #0a6118;
+}
+
+.product-variety, .search-flower, .special-offers {
+    padding: 40px 20px;
+    text-align: center;
+    background:  #92cdb3; /* Light background for contrast */
+    border-radius: 10px;
+    margin: 10px 0; /* Reduced space between sections */
+}
+
+.product-variety h2, .search-flower h2, .special-offers h2 {
+    font-family: 'Dancing Script', cursive; /* Consistent heading font */
+    font-size: 2em;
+}
+
+.variety-grid {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; /* Allows wrapping on smaller screens */
+    gap: 15px;
+}
+
+.variety-item {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 15px;
+    background-color: #92cdb3;
+    width: 150px; 
+    font-family: 'Dancing Script', cursive; /* Cursive for flower names */
+}
+.special-offers .offer-grid {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.special-offers .offer-item {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 15px;
+    width: 200px;
+    background:  #ddd;
+}
+
+.special-offers img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background:  #92cdb3;
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header .logo {
+    font-size: 3rem;
+    color: #0a6118;/* Italic style for the logo */
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #0a6118;
+    font-size: xx-large; /* Adjusted from xx-large */
+    font-weight: bold;
+    font-family: 'Dancing Script', cursive; 
+    transition: color 0.3s ease; /* Transition effect on hover */
+}
+
+nav a:hover {
+    color: #ebe5e5; /* Change color on hover */
+}
+
+.search-cart {
+    display: flex;
+    align-items: center;
+}
+
+.search-cart input {
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.cart {
+    font-size: 18px;
+    margin-left: 20px;
+}
+
+.banner {
+    background-image: url('https://aqomi.com/wp-content/uploads/2024/02/Aqomi_Embracing_Eco-Friendly_Design_in_Your_Brand_s_Aesthetics_3.webp');
+    background-size: cover; /* Cover the entire area */
+    background-position: center; /* Center the image */
+    text-align: center;
+    padding: 100px 20px;
+    height: 400px; /* Set a specific height */
+    display: flex; /* Use flexbox for vertical centering */
+    align-items: center; /* Center content vertically */
+    justify-content: center; /* Center content horizontally */
+}
+
+.banner-text {
+    animation: scaleFadeIn 1.5s forwards; /* Animation for text */
+}
+
+@keyframes scaleFadeIn {
+    from {
+        opacity: 0;
+        transform: scale(0.8); /* Start smaller */
+    }
+    to {
+        opacity: 1;
+        transform: scale(1); /* End at normal size */
+    }
+}
+
+.banner-text h1 {
+    font-family: 'Dancing Script', cursive; /* Change to your preferred cursive font */
+    font-size: 2.5em; /* Adjust the size as needed */
+    color: #ffffff; /* Change color as needed */
+    text-align: center; /* Center the text */
+    margin: 0; /* Remove default margin */
+}
+
+.featured-products, .seasonal-offers, .about-us, .testimonials, .newsletter {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.product-grid, .offer-grid {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.product-card, .offer-item {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 15px;
+    width: 200px;
+    background-color: white;
+    transition: transform 0.3s ease; /* Transition for hover effect */
+}
+
+.product-card:hover, .offer-item:hover {
+    transform: scale(1.05); /* Scale up on hover */
+}
+
+.product-card img, .offer-item img {
+    width: 200px; /* Set fixed width */
+    height: 200px; /* Set fixed height */
+    object-fit: cover; /* Maintain aspect ratio */
+    border-radius: 5px;
+}
+
+.product-card h3 {
+    font-family: 'Dancing Script', cursive;  /* Cursive for product names */
+    font-style: italic; /* Italic style for product names */
+}
+
+.newsletter input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+.testimonial-item {
+    margin: 20px 0;
+    font-family: 'Dancing Script', cursive; /* Cursive for testimonials */
+}
+
+footer {
+    background:  #92cdb3;
+    text-align: center;
+    padding: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: large;
+}
+
+.footer-links, .social-media {
+    margin-bottom: 10px;
+}
+
+.footer-links a, .social-media a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: #333;
+    transition: color 0.3s ease; /* Transition effect on hover */
+}
+
+.footer-links a:hover, .social-media a:hover {
+    color: #ff6f61; /* Change color on hover */
+}
+
+.newsletter, .testimonials, .about-us {
+    background: #92cdb3;
+    padding: 40px 20px; /* Keep the internal padding */
+    margin: 10px 0; /* Reduced margin for less space between sections */
+    text-align: center; /* Center text if desired */
+}
